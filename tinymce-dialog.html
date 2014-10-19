@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Disable browser caching of dialog window -->
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="pragma" content="no-cache" />
+
+        <style type='text/css'>
+
+		</style>
+    </head>
+    <body>
+        <div id="tdsk_dialog_wrapper">
+            <p id="tdsk_php_version">No data yet. Will be provided by JavaScript below.</p>
+            <form>
+                <label for="dumb_shortcode_text">Insert Text Shortcode Should Display</label><br />
+                <input type="text" name="dumb_shortcode_text" /><br /><br />
+                <input type="submit" />
+            </form>
+        </div>
+
+        <script type="text/javascript">
+            //  Step 1: Get arguments passed to dialog.
+            var passed_arguments = top.tinymce.activeEditor.windowManager.getParams();
+
+            //  Step 1a: Setup jQuery. More Info: http://johnmorris.me/computers/using-jquery-and-jquery-ui-in-tinymce-dialog-iframe/
+            /**
+             * To use jQuery, use the $ variable and pass jq_context as the second parameter.
+             * e.g. $("#tdsk_dialog_wrapper", jq_context)
+             */
+            var $ = passed_arguments.jquery;
+            var jq_context = document.getElementsByTagName("body")[0];
+
+
+            //  Step 2: Insert the shortcode when submit is clicked.
+            $("form", jq_context).submit(function(event) {
+                    event.preventDefault();
+
+                    //  Step 2a: Construct the shortcode
+                    //  Get the input text
+                    var input_text = $("input[name='dumb_shortcode_text']", jq_context).val()
+
+                    //  Construct the shortcode
+                    var shortcode = '[tdsk-dumb-shortcode';
+
+                    //  Do we have a value in the input?
+                    if( input_text != "" ) {
+                        //  Yes, we do. Add the text argument to the shortcode.
+                        shortcode += ' text="' + input_text + '"';
+                    }
+
+                    //  Close the shortcode
+                    shortcode += ']';
+
+
+                    //  Step 2b: Insert the shortcode into the editor
+                    passed_arguments.editor.selection.setContent(shortcode);
+                    passed_arguments.editor.windowManager.close();
+            });
+
+
+            //  Step 3: Use the passed PHP version to prove that passing data
+            //  from PHP can work.
+            $("#tdsk_php_version", jq_context).text("PHP Version: " + passed_arguments.php_version);
+        </script>
+    </body>
+</html>
