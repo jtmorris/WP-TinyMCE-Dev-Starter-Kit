@@ -64,7 +64,7 @@ define ( 'TDSK_ROOT_PATH', plugin_dir_path( __FILE__ ) );
 define( 'TDSK_ROOT_URL', plugin_dir_url( __FILE__ ) );
 
 //  Absolute path to the main plugin file (this one).
-define( 'TDSK_PLUGIN_FILE', TT_ROOT_PATH . 'tinymce-dev-starter.php' );
+define( 'TDSK_PLUGIN_FILE', TDSK_ROOT_PATH . 'tinymce-dev-starter.php' );
 
 
 
