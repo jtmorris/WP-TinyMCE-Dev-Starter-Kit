@@ -25,9 +25,10 @@
 
 
     //  Step 2:  Define the TinyMCE plugin and setup the button.
-    //  The last property in the tinymce.create paramenter below must be the same
+    //  The last property in the first tinymce.create paramenter below must be the same
     //  as the plugin you defined in tinymce-dev-starter.php. In this case, it is
-    //  tdsk_plugin.
+    //  tdsk_plugin.  If we called it my_cool_plugin, the first parameter would change
+    //  to 'tinymce.plugins.my_cool_plugin'.
     tinymce.create('tinymce.plugins.tdsk_plugin', {
         init: function(editor, url) {   //  Documentation: http://www.tinymce.com/wiki.php/API3:method.tinymce.Plugin.init
             /**
