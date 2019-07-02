@@ -17,5 +17,5 @@ end with *tinymce-dialog.html*.
 However, as I mentioned, it is an accompaniement to a tutorial. Check out the
 tutorial for a step-by-step walkthrough:
 
-1. [How To Create a TinyMCE Editor Dialog Window in a WordPress Plugin](http://johnmorris.me/computers/coding-programming/how-to-create-a-tinymce-editor-dialog-window-in-a-wordpress-plugin/)
-1. [Using jQuery and jQuery UI in TinyMCE Dialog Iframe](http://johnmorris.me/computers/using-jquery-and-jquery-ui-in-tinymce-dialog-iframe/)
+1. [How To Create a TinyMCE Editor Dialog Window in a WordPress Plugin](https://web.archive.org/web/20160815193906/http://johnmorris.me/computers/software/how-to-create-a-tinymce-editor-dialog-window-in-a-wordpress-plugin/)
+1. [Using jQuery and jQuery UI in TinyMCE Dialog Iframe](https://web.archive.org/web/20160518130829/http://johnmorris.me/computers/using-jquery-and-jquery-ui-in-tinymce-dialog-iframe/#comment-82)
