@@ -1,15 +1,15 @@
 <?php
 /**
  * Plugin Name: TinyMCE Developer Starter Kit
- * Plugin URI: http://johnmorris.me/computers/coding-programming/how-to-create-a-tinymce-editor-dialog-window-in-a-wordpress-plugin/
+ * Plugin URI: https://web.archive.org/web/20160815193906/http://johnmorris.me/computers/software/how-to-create-a-tinymce-editor-dialog-window-in-a-wordpress-plugin/
  * Description: A simple starting point for developers to practice TinyMCE and WordPress integration.
  * Version: 1.0
  * Author: John Morris
- * Author URI: http://cs.johnmorris.me
+ * Author URI: 
  * License: GPL2
  */
 
-/*  Copyright 2014-2015 John Morris  (email : john@johnmorris.me)
+/*  Copyright 2014-2015 John Morris  (email : johntylermorris@gmail.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as
@@ -31,7 +31,7 @@
 //////////////////////////////////
 /**
  * 1.)  This starter kit is based on the tutorial on my website. The tutorial can
- * be found at http://johnmorris.me/computers/coding-programming/how-to-create-a-tinymce-editor-dialog-window-in-a-wordpress-plugin/
+ * be found at https://web.archive.org/web/20160815193906/http://johnmorris.me/computers/software/how-to-create-a-tinymce-editor-dialog-window-in-a-wordpress-plugin/
  *
  * 2.)  In keeping with WordPress plugin best practices
  * (http://code.tutsplus.com/articles/tips-for-best-practices-in-wordpress-development--cms-20649),
@@ -111,7 +111,7 @@ function tdsk_dumb_shortcode_func( $attributes ) {
  * need it in the admin.
  *
  * More information on jQuery and TinyMCE in Wordpress can be found here:
- * http://johnmorris.me/computers/using-jquery-and-jquery-ui-in-tinymce-dialog-iframe/
+ * https://web.archive.org/web/20160518130829/http://johnmorris.me/computers/using-jquery-and-jquery-ui-in-tinymce-dialog-iframe/
  */
 add_action( 'admin_enqueue_scripts', 'tdsk_enqueue_admin_scripts' );
 function tdsk_enqueue_admin_scripts() {
